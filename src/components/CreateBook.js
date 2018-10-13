@@ -28,7 +28,7 @@ class CreateBook extends Component {
             placeholder="A description for the Book"
           />
         </div>
-        <Mutation mutation={POST_MUTATION} variables={{ description }}>
+        <Mutation mutation={POST_MUTATION} variables={{ description }} onCompleted={() => this.props.history.push('/')}>
           {postMutation => <button onClick={postMutation}>Submit</button>}
         </Mutation>
       </div>
