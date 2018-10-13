@@ -4,7 +4,7 @@ import gql from 'graphql-tag'
 
 import Book from './Book'
 
-const BOOKS_QUERY = gql`
+export const BOOKS_QUERY = gql`
   {
     books {
       _id
